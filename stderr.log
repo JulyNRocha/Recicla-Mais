@@ -1,0 +1,85 @@
+2021-05-09 23:26:25.776577 [UID:1873][2088] Child process with pid: 2090 was killed by signal: 15, core dump: 0
+2021-05-09 23:26:26.416008 [UID:1873][2088] Child process with pid: 2106 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home/hostcube/reciclamais/passenger_wsgi.py", line 8, in <module>
+    wsgi = imp.load_source('wsgi', 'app.py')
+  File "/home/hostcube/virtualenv/reciclamais/3.7/lib64/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "app.py", line 37
+    for x in data
+                ^
+SyntaxError: invalid syntax
+2021-05-09 23:26:31.050888 [UID:1873][2263] Child process with pid: 2265 was killed by signal: 15, core dump: 0
+2021-05-09 23:26:31.673116 [UID:1873][2263] Child process with pid: 2299 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home/hostcube/reciclamais/passenger_wsgi.py", line 8, in <module>
+    wsgi = imp.load_source('wsgi', 'app.py')
+  File "/home/hostcube/virtualenv/reciclamais/3.7/lib64/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "app.py", line 37
+    for x in data
+                ^
+SyntaxError: invalid syntax
+2021-05-09 23:26:42.921528 [UID:1873][2702] Child process with pid: 2709 was killed by signal: 15, core dump: 0
+2021-05-09 23:26:52.310642 [UID:1873][2702] Child process with pid: 3628 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home/hostcube/reciclamais/passenger_wsgi.py", line 8, in <module>
+    wsgi = imp.load_source('wsgi', 'app.py')
+  File "/home/hostcube/virtualenv/reciclamais/3.7/lib64/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "app.py", line 37
+    for x in data
+                ^
+SyntaxError: invalid syntax
+[2021-05-09 23:27:20,356] ERROR in app: Exception on /buscarempresas [GET]
+Traceback (most recent call last):
+  File "/home/hostcube/virtualenv/reciclamais/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/hostcube/virtualenv/reciclamais/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/hostcube/virtualenv/reciclamais/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/hostcube/virtualenv/reciclamais/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/hostcube/virtualenv/reciclamais/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/hostcube/virtualenv/reciclamais/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 41, in buscarempresas
+    return render_template('buscarempresas.html', quantidade = len(empresas), empresas = data2)
+NameError: name 'empresas' is not defined
+[2021-05-09 23:27:54,995] ERROR in app: Exception on /buscarempresas [GET]
+Traceback (most recent call last):
+  File "/home/hostcube/virtualenv/reciclamais/3.7/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/hostcube/virtualenv/reciclamais/3.7/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/hostcube/virtualenv/reciclamais/3.7/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/hostcube/virtualenv/reciclamais/3.7/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/hostcube/virtualenv/reciclamais/3.7/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/hostcube/virtualenv/reciclamais/3.7/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 41, in buscarempresas
+    data2.append(empresa)
+NameError: name 'empresas' is not defined

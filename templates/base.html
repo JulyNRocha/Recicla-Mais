@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Recicla Mais</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,500,700,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-between mt-3">
+                        <div class="header d-flex align-items-center">
+                            <a class="logoLink d-flex align-items-center" href={{url_for('index')}}>
+                                <img src="assets/img/logo.png" style="width: 50px;margin-right: 10px;">
+                                <h1 class="text-uppercase m-0" style="font-size: 18px;font-weight: 600;">ReciclaMais</h1>
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center"><img src="assets/img/login.png" style="width: 30px;"></div>
+                    </div>
+
+                    {% block content %}{% endblock %}
+                    
+                    <div class="menuBottom">
+                	<img src="assets/img/pass1.png"> Faça login para obter acesso!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

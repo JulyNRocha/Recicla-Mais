@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content  %}
+
+<p class="imgclick mt-3 mb-0" style="font-weight: bold;">Buscando Catadores</p>
+<img class="imgclick mt-3" style="border: 4px solid var(--primary-color); border-radius: 5px;  width: 100%" src="assets/img/procurando_catador.png">
+
+<p class="imgclick2 d-none mt-3 mb-0" style="font-weight: bold;">Catador encontrado!</p>
+<img class="imgclick2 mt-3 d-none" style="border: 4px solid var(--primary-color); border-radius: 5px; width: 100%" src="assets/img/achando_catador.png">
+
+<script>
+$('.imgclick').on('click', function() {
+	$('.imgclick').addClass('d-none');
+	$('.imgclick2').removeClass('d-none');
+});
+</script>
+
+{% endblock %}

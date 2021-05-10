@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p class="mt-3" style="font-weight: bold;">Funções</p>
+
+<div class="boxIcons">
+    <a href={{url_for('sobrenos')}}>
+    	<img src="assets/img/IDEIA.png">
+    	<span>Sobre nós</span>
+    </a>
+    
+    <a href={{url_for('buscarempresas')}}>
+    	<img src="assets/img/EMPRESAS.png">
+    	<span>Buscar empresas</span>
+    </a>
+    
+    <a href={{url_for('coletadelixo')}}>
+    	<img src="assets/img/RECYCLE.png">
+    	<span>Coleta de Lixo</span>
+    </a>
+    
+    <a href={{url_for('catadores')}}>
+    	<img src="assets/img/TRABALHADORES.png">
+    	<span>Catadores de lixo</span>
+    </a>
+</div>
+
+<div class="menuBottom">
+	<img src="assets/img/pass1.png"> Faça login para obter acesso!
+</div>
+
+{% endblock %}

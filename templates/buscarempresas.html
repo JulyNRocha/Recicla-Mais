@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p class="mt-3" style="font-weight: bold;">Encontre abaixo empresas de coleta</p>
+{%if quantidade > 0 %}
+<ul class="m-0 p-0" style="list-style: none;">
+    {%for i in range(0, quantidade)%}
+        <li class="mb-3" style="background-color: #fff; padding: 10px; border-radius: 10px;">{{empresas[i]}}</li>
+    {%endfor%}
+</ul>
+{%else%}
+Nenhuma empresa cadastrada.
+{%endif%}
+
+{% endblock %}
